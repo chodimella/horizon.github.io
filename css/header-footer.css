@@ -1,0 +1,78 @@
+/* ------------------------------ NAV BAR ------------------------------ */
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  z-index: 100;
+}
+
+.navbar a {
+  display: inline-block;
+  float: left;
+  
+  color: #f2f2f2;
+
+  text-align: center;
+  text-decoration: none;
+
+  padding: 0.5rem 0.5rem;
+
+  transition: color, background-color;
+  transition-duration: 0.25s;
+}
+
+.navbar a:hover, .navbar a:active, .navbar a:focus {
+  color: black;
+  background-color: #ddd;
+}
+
+/* Add seperate class for styling for 'Project Horizon' */
+.name {
+  font-family: 'Lobster', sans-serif;
+  font-size: 1.5rem;
+}
+
+.menu-item {
+  font-family: 'Raleway', Verdana, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* ------------------------------ FOOTER STYLING ------------------------------ */
+
+footer {
+  flex-basis: 100%;
+  align-self: flex-end;
+  padding: 2rem;
+  background-color: #333;
+}
+
+.footer-row {
+  text-align: center;
+  margin-bottom: 1rem;
+  flex-basis: 100%;
+}
+
+.footer-row p {
+  color: white;
+}
+
+.footer-row a {
+  color: white;
+
+  transition-property: color;
+  transition-duration: 0.25s;
+}
+
+.footer-row a:hover, .footer-row a:focus {
+  color: green;
+}
+
+/* ------------------------------ QUERIES ------------------------------ */
+
+/* Scale down font size as device width gets smaller */

@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 1em 10vw 1em 10vw;
+}
+
+/* ------------------------------ FLEX GRID STUFF ------------------------------ */
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1of2 {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+/* ------------------------------ QUERIES ------------------------------ */
+
+@media (min-width: 18.75em) {
+
+}
+
+@media (min-width: 25em) {
+  .wrapper {
+      margin-left: 10vw;
+      margin-right: 10vw;
+      margin-bottom: 1em;
+      margin-top: 1em;
+  }
+}
+
+@media (min-width: 40em) {
+  .col-1of2 {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 60em) {
+  .wrapper {
+      margin-left: 15vw;
+      margin-right: 15vw;
+      margin-bottom: 2em;
+      margin-top: 2em;
+  }
+}
